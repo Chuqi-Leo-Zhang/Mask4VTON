@@ -1,0 +1,3 @@
+[submodule "sssegmentation"]
+	path = sssegmentation
+	url = https://github.com/CharlesPikachu/sssegmentation
