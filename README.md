@@ -76,7 +76,8 @@ The segmentation model uses **Mask2Former with Tiny SwinTransformer**, trained o
 ## Tips
 1. The clothes images are expected to has a white background.
 2. For easy implementation, you can save your clothes images in directory [clothes](clothes) and save the person image in directory [persons](persons). I also provided some clothes and person images for you to test.
-The mask result would be save at person_seg directory. Some details would be mentioned in the [notebook](mask4vton.ipynb)
+3. The clothes type is expected to be one of the following types: 'T-shirt/top','Trouser','Pullover','Dress','Coat','Sandal','Shirt','Sneaker','Ankle Boot'.
+4. The mask result would be save at person_seg directory. Some details would be mentioned in the [notebook](mask4vton.ipynb)
 
 
 ## Acknowledgments
