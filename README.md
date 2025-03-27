@@ -9,6 +9,7 @@ The Mask4VTON pipeline integrates the following key components:
 3. **Mask Combination**: Combines segmentation masks based on the predicted garment class to generate the final mask for Virtual Try-On. 
 
 You can download the weight of models at [here](https://drive.google.com/drive/folders/1tGgDTZeWiVsbgkUdzuo3WhAqtCtOZpFV?usp=share_link). After download checkpoints directory you should directly put it under MASK4VTON direcoty.
+I run the code on Linux with cuda 12.5.
 
 ## Installation
 Follow these steps to set up the environment and install dependencies:
@@ -24,7 +25,7 @@ conda create --name ssseg python=3.10
 conda activate ssseg
 ```
 
-### 3. Install PyTorch and CUDA
+### 3. Install PyTorch and CUDA(These are the versions I used)
 ```bash
 conda install pytorch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 pytorch-cuda=12.1 -c pytorch -c nvidia
 ```
@@ -44,6 +45,9 @@ Install **MMCV** for CUDA support:
 ```bash
 pip install mmcv==2.2.0 -f https://download.openmmlab.com/mmcv/dist/cu121/torch2.4/index.html
 ```
+
+### 5. Ready to generate the mask
+Please go to generate mask in [mask4vton.ipynb](mask4vton.ipynb).
 
 ## Directory Structure
 
